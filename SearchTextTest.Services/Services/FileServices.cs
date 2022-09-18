@@ -34,7 +34,7 @@ namespace SearchTextTest.Services.Services
 
         private IList<FileInfo> GetFiles()
         {
-            return System.IO.Directory.GetFiles(_baseSearchDirectory, "*.log", SearchOption.AllDirectories).Select(f => new FileInfo(f)).ToList();
+            return System.IO.Directory.GetFiles(_baseSearchDirectory, "*.txt", SearchOption.AllDirectories).Select(f => new FileInfo(f)).ToList();
         }
     }
 }
